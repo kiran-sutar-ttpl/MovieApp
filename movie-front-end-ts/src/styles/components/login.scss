@@ -1,0 +1,46 @@
+@import '../../styles/variable.scss';
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $background-color;
+
+  .login-box {
+    background-color: $background-color;
+    padding: 2rem;
+    max-width: 450px;
+    width: 330px;
+    height: 336px;
+    opacity: 1; 
+    gap: 0px;
+
+    .login-title {
+      text-align: center;
+      font-size: 3rem;
+      line-height: 48px;
+      color: $text-color;
+    }
+
+    .login-form {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+
+      .remember-me {
+        margin-bottom: 1.5rem;
+
+        input {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    .error-message {
+      color: $error-color;
+      font-size: 0.9rem;
+      padding: 2px;
+    }
+    
+  }
+}

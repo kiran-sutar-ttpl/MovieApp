@@ -1,0 +1,35 @@
+@import '../../styles/variable.scss';
+
+.button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: $button-radius;
+  cursor: pointer;
+  font-size: $font-size-base;
+  transition: background-color 0.3s;
+
+  &.primary {
+    background-color: $primary-color;
+    color: white;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  &.secondary {
+    background-color: $input-color;
+    color: white;
+
+    &:hover {
+      background-color: lighten($input-color, 10%);
+    }
+  }
+
+  &.disabled {
+    background-color: lighten($border-color, 20%);
+    color: $secondary-color;
+    cursor: not-allowed;
+  }
+}
+

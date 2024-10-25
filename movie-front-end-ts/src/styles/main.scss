@@ -1,0 +1,14 @@
+@import './variable';
+
+body {
+  color: $primary-color;
+  font-family: $font-family-base;
+  margin: 0;
+  background-color: $background-color;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
